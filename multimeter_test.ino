@@ -76,7 +76,7 @@ void conductivityTest()
     Vout = (Vin * sensorValue) / 1023;
     ohms = Rref * (1 / ((Vin / Vout) - 1));
     lcd.setCursor(0, 1);
-    if (ohms < 10)
+    if (ohms < 20)
     {
         lcd.print("True");
         tone(cont, 500);
